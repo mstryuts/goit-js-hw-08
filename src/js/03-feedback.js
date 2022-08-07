@@ -8,7 +8,7 @@ const refs = {
 const STORAGE_VALUE = 'feedback-form-state'
 const formData = {};
 
-restoreData()
+
 
 function onFormSubmit(e) {
     if (refs.input.value === "" || refs.message.input === "") {
@@ -36,3 +36,4 @@ function restoreData() {
 }
 refs.form.addEventListener('submit', onFormSubmit);
 refs.form.addEventListener('input', throttle(onFormInput, 500));
+restoreData()
