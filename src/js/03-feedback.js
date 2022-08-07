@@ -8,8 +8,6 @@ const refs = {
 const STORAGE_VALUE = 'feedback-form-state'
 const formData = {};
 
-
-
 function onFormSubmit(e) {
     if (refs.input.value === "" || refs.message.input === "") {
         return alert('Заполните все поля')
